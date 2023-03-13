@@ -25,6 +25,8 @@
         "optimize-regex"
     ],
     "rules": {
+        "object-curly-newline": "off",
+        "import/no-extraneous-dependencies": "off",
         "optimize-regex/optimize-regex": "warn",
         "class-methods-use-this": "off",
         "indent": [2, "tab"],
