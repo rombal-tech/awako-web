@@ -1,23 +1,24 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
+import { Button, AppBar, Toolbar, Stack } from '@material-ui/core';
 import { NavLink } from 'react-router-dom';
 import './header.css';
 
 const Header = () => (
-	<nav>
-		<div>
-			<Button variant="outlined" color="secondary">
-				<div>
-					<NavLink to="/login">LOGIN</NavLink>
-				</div>
-			</Button>
-			<Button variant="outlined" color="secondary">
-				<div>
-					<NavLink to="/registration">SIGN UP</NavLink>
-				</div>
-			</Button>
-		</div>
-	</nav>
+	<AppBar position="fixed" style={{ backgroundColor: 'rgba(0,0,0,0.8)' }} className="appBar">
+		<Toolbar variant="dense">
+			<Stack spacing={2} direction="row" className="login-button">
+				<Button variant="text" color="primary" size="small">
+					<NavLink to="/registration">СОЗДАТЬ СВОЮ МОДЕЛЬ</NavLink>
+				</Button>
+				<Button variant="text" color="inherit" size="small">
+					<NavLink to="/login">Войти</NavLink>
+				</Button>
+				<Button variant="text" color="inherit" size="small">
+					<NavLink to="/">О компании</NavLink>
+				</Button>
+			</Stack>
+		</Toolbar>
+	</AppBar>
 );
 
 export default Header;
