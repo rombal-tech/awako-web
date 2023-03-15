@@ -1,0 +1,14 @@
+.login-button a {
+    color: white;
+    text-decoration: none
+}
+
+.appBar {
+    height: 48px;
+    align-items: center;
+}
+
+.brandName a {
+    color: white;
+    text-decoration: none
+}

@@ -1,12 +1,10 @@
 import React from 'react';
 import Header from './header/header';
 
-const Home = () => (
-	<div>
+const HomePage = () => (
+	<div className="home-page">
 		<Header />
-		<h1>Home Page</h1>
-
 	</div>
 );
 
-export default Home;
+export default HomePage;
