@@ -1,7 +1,5 @@
 import React from 'react';
-import Typography from '@mui/material/Typography';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+import { Button, Typography, TextField } from '@material-ui/core';
 import { NavLink } from 'react-router-dom';
 import { useForm, Controller, SubmitHandler, useFormState } from 'react-hook-form';
 import { emailValidation, passwordValidation } from './Validation';
