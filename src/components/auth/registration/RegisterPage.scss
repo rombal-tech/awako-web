@@ -1,0 +1,31 @@
+.register-page {
+    display: flex;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.register-page-subtitle {
+    color: rgb(180, 184, 193);
+}
+
+.register-page-form {
+    width: 475px;
+}
+
+.register-button-confirm {
+    width: 475px;
+}
+
+.send-code {
+    a {
+        text-decoration: none;
+    }
+}
+
+
+
