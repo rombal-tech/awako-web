@@ -9,17 +9,21 @@
     text-align: center;
 }
 
-.login-page_subtitle {
+.login-page-subtitle {
     color: rgb(180, 184, 193);
-}
-
-.login_page_form {
-    max-width: 360px;
 }
 
 .reg-question a {
     color: rgb(180, 184, 193);
     text-decoration: none;
     margin-top: 20px;
+}
+
+.login-page-form {
+    width: 360px;
+}
+
+.login-button-confirm {
+    width: 360px;
 }
 
