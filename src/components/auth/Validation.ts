@@ -25,6 +25,22 @@ export const passwordValidation = {
 		if (value.length < 6) {
 			return 'Пароль должен быть не менее 6 символов';
 		}
+		if (value.length >= 21) {
+			return 'Пароль может содержать максимум 20 символов';
+		}
+		return true;
+	},
+};
+
+export const codeValidation = {
+	required: REQUIRED_FIELD,
+	validate: (value: string) => {
+		if (value.length > 6 || value.length < 6) {
+			return 'Код должен содержать 6 символов';
+		}
+		if (!value.match(/^[a-zA-Z\s]*$/)) {
+			return 'Код не может содержать буквы';
+		}
 		return true;
 	},
 };

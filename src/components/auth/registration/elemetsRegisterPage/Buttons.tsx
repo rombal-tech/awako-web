@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const Buttons = () => (
 	<div className="send-code">
-		<NavLink to="/account/confirm/id000000">
+		<NavLink to="/account/confirm/000000">
 			<Button
 				variant="contained"
 				type="submit"
