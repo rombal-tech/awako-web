@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import Header from '../../home/header/header';
 import Controllers from './elementsLoginPage/Controllers';
 import Buttons from './elementsLoginPage/Buttons';
-import '../Validation';
+import './elementsLoginPage/loginValidation';
 import './LoginPage.scss';
 
 const LoginPage = () => (

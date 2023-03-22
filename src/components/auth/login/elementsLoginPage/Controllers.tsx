@@ -2,7 +2,7 @@ import React from 'react';
 import { Controller, SubmitHandler, useForm, useFormState } from 'react-hook-form';
 import { TextField } from '@material-ui/core';
 import { ILoginPage } from '../ILoginPage';
-import { passwordValidation, emailValidation } from '../../Validation';
+import { passwordValidation, emailValidation } from './loginValidation';
 
 const onSubmit: SubmitHandler<ILoginPage> = (data) => console.log(data);
 const Controllers = () => {
