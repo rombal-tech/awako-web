@@ -1,6 +1,6 @@
 import React from 'react';
 import { Controller, SubmitHandler, useForm, useFormState } from 'react-hook-form';
-import { TextField } from '@material-ui/core';
+import { TextField, Typography } from '@material-ui/core';
 import { ILoginPage } from '../ILoginPage';
 import { passwordValidation, emailValidation } from './loginValidation';
 
@@ -12,6 +12,12 @@ const Controllers = () => {
 	});
 	return (
 		<>
+			<Typography variant="h4" component="div">
+				Войдите
+			</Typography>
+			<Typography variant="subtitle1" component="div" gutterBottom className="login-page-subtitle">
+				Необходима авторизация
+			</Typography>
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<Controller
 					control={control}

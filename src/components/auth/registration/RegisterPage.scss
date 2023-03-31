@@ -8,12 +8,11 @@
     justify-content: center;
     align-items: center;
     text-align: left;
-    font-weight: bold;
 }
 
 .background-photo {
     height: 100vh;
-    background: no-repeat url(./elemetsRegisterPage/Background.png);
+    background: no-repeat url(components/Background.png);
     background-size: cover;
 }
 

@@ -1,39 +1,38 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
-import { NavLink } from 'react-router-dom';
+import { Box } from '@material-ui/core';
 import Header from '../../home/header/header';
-import Controllers from './elementsLoginPage/Controllers';
-import Buttons from './elementsLoginPage/Buttons';
-import './elementsLoginPage/loginValidation';
+import Controllers from './components/Controllers';
+import Buttons from './components/Buttons';
+import './components/loginValidation';
 import './LoginPage.scss';
 
 const LoginPage = () => (
-	<>
+	<div className="background-photo">
 		<div>
 			<Header />
 		</div>
 		<div className="login-page">
-			<Typography variant="h4" component="div">
-				Войдите
-			</Typography>
-			<Typography variant="subtitle1" component="div" gutterBottom className="login-page-subtitle">
-				Необходима авторизация
-			</Typography>
-			<div className="login-page-form">
-				<Controllers />
-			</div>
-			<div className="login-button-confirm">
-				<Buttons />
-			</div>
-			<div className="reg-question">
-				<NavLink to="/registration">
-					<Typography variant="subtitle1" component="div" gutterBottom>
-						Еще не зарегистрировались ?
-					</Typography>
-				</NavLink>
-			</div>
+			<Box
+				display="flex"
+				justifyContent="center"
+				alignItems="center"
+				flexDirection="column"
+				maxWidth={640}
+				margin="auto"
+				padding={5}
+				borderRadius={5}
+				boxShadow="5px 5px 10px #ccc"
+
+			>
+				<div className="login-page-form">
+					<Controllers />
+				</div>
+				<div className="login-button-confirm">
+					<Buttons />
+				</div>
+			</Box>
 		</div>
-	</>
+	</div>
 );
 
 export default LoginPage;

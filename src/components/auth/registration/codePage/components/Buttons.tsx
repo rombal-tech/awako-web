@@ -4,7 +4,7 @@ import { Button } from '@material-ui/core';
 
 const Buttons = () => (
 	<div className="send-code">
-		<NavLink to="/schema/000000">
+		<NavLink to="/dashboard">
 			<Button
 				variant="contained"
 				type="submit"
