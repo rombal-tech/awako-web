@@ -7,7 +7,7 @@ import './components/loginValidation';
 import './LoginPage.scss';
 
 const LoginPage = () => (
-	<div className="background-photo">
+	<div className="background-photo-log">
 		<div>
 			<Header />
 		</div>

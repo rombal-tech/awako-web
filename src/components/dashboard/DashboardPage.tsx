@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { Box } from '@material-ui/core';
+import { Box, Checkbox, IconButton } from '@material-ui/core';
+import MoreIcon from '@mui/icons-material/MoreVert';
 import Header from '../home/header/header';
 import ProjectsList from './components/ProjectsList';
+import Buttons from './components/Buttons';
 import './DashboardPage.scss';
 
 export interface DBSchema {
@@ -19,10 +21,10 @@ export default class DashboardPage extends Component <any, DashboardPageState> {
 		super(props);
 		this.state = {
 			DBSchemas: [
-				{ name: 'Проект 1', description: 'Описание проекта 1', checked: false, id: 0 },
-				{ name: 'Проект 2', description: 'Описание проекта 2', checked: false, id: 1 },
-				{ name: 'Проект 3', description: 'Описание проекта 3', checked: false, id: 2 },
-				{ name: 'Проект 4', description: 'Описание проекта 4', checked: false, id: 3 },
+				{ name: 'Схема 1', description: 'Описание схемы 1', checked: false, id: 0 },
+				{ name: 'Схема 2', description: 'Описание схемы 2', checked: false, id: 1 },
+				{ name: 'Схема 3', description: 'Описание схемы 3', checked: false, id: 2 },
+				{ name: 'Схема 4', description: 'Описание схемы 4', checked: false, id: 3 },
 			],
 		};
 	}
@@ -48,9 +50,12 @@ export default class DashboardPage extends Component <any, DashboardPageState> {
 						width="100%"
 					>
 						<div className="card-header">
-							<h5 className="card-title"> Ваши проекты:</h5>
+							<h5 className="card-title"> Ваши схемы:</h5>
 						</div>
 						<div className="card-body">
+							<div className="container">
+								<Buttons />
+							</div>
 							<div className="media-list">
 								<ProjectsList
 									items={DBSchemas}
@@ -58,7 +63,6 @@ export default class DashboardPage extends Component <any, DashboardPageState> {
 							</div>
 						</div>
 					</Box>
-
 				</div>
 			</>
 		);

@@ -26,5 +26,14 @@
 
 .login-button-confirm {
     width: 360px;
+    a {
+        text-decoration: none;
+    }
+}
+
+.background-photo-log {
+    height: 100vh;
+    background: no-repeat url(components/background.jpg);
+    background-size: cover;
 }
 

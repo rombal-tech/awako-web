@@ -33,7 +33,7 @@
 .card-title {
     position: relative;
     top: -30px;
-    left: -30px
+    left: -30px;
 }
 
 .card-body {
@@ -51,4 +51,10 @@
 h5 {
     font-weight: normal;
 }
+
+.container {
+    width: 1480px;
+    margin: -10px auto;
+}
+
 

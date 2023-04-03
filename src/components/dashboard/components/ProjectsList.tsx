@@ -1,6 +1,7 @@
 import React from 'react';
 import { Divider, List, ListItem, ListItemButton, ListItemText } from '@material-ui/core';
 import { DBSchema } from '../DashboardPage';
+import FadeMenu from './FadeMenu';
 
 interface ProjectListProps {
 	items: DBSchema[]
@@ -17,6 +18,7 @@ const ProjectsList = (props: ProjectListProps) => {
 								primary={item.name}
 								secondary={item.description}
 							/>
+							<FadeMenu />
 						</ListItemButton>
 					</ListItem>
 					<Divider />

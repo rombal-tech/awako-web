@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 import { NavLink } from 'react-router-dom';
 
 const Buttons = () => (

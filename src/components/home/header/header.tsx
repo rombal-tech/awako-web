@@ -7,8 +7,11 @@ const Header = () => (
 	<AppBar position="fixed" style={{ backgroundColor: 'rgba(0,0,0,0.8)' }} className="appBar">
 		<Toolbar variant="dense">
 			<Stack spacing={2} direction="row" className="login-button">
-				<Button variant="text" color="primary" size="small">
-					<NavLink to="/registration">СОЗДАТЬ СВОЮ МОДЕЛЬ</NavLink>
+				<Button
+					variant="text"
+					size="small"
+				>
+					<NavLink to="/registration">НАЧНИ МОДЕЛИРОВАНИЕ СЕЙЧАС</NavLink>
 				</Button>
 				<Button variant="text" color="inherit" size="small">
 					<NavLink to="/login">Войти</NavLink>

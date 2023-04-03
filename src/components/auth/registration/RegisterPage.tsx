@@ -7,7 +7,7 @@ import Checkboxes from './components/Checkboxes';
 import './RegisterPage.scss';
 
 const RegisterPage = () => (
-	<div className="background-photo">
+	<div className="background-photo-reg">
 		<div>
 			<Header />
 		</div>

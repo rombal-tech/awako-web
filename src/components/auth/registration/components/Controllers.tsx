@@ -60,10 +60,10 @@ const Controllers = () => {
 							/>
 						)}
 					/>
-					<Typography variant="subtitle1" component="div">
-						<h5>Необязательное поле</h5>
-					</Typography>
 				</form>
+				<Typography variant="subtitle1" component="div">
+					<h5>Необязательное поле</h5>
+				</Typography>
 			</div>
 		</>
 	);
