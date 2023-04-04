@@ -15,17 +15,17 @@ const Buttons = () => (
 					marginTop: 2,
 				}}
 			>
-				Войти
+				Sign in
 			</Button>
 		</NavLink>
 		<div className="reg-question" style={{ marginTop: 15 }}>
 			<NavLink to="/registration">
 				<Typography variant="subtitle1" component="div" gutterBottom>
-					Еще не зарегистрировались ?
+					Not registered yet?
 				</Typography>
 				<NavLink to="/">
 					<Typography variant="subtitle1" component="div" gutterBottom>
-						Забыли пароль ?
+						Forgot password?
 					</Typography>
 				</NavLink>
 			</NavLink>

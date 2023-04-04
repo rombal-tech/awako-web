@@ -15,7 +15,7 @@ const Buttons = () => (
 					marginTop: 2,
 				}}
 			>
-				Подтвердить регистрацию
+				Confirm
 			</Button>
 		</NavLink>
 	</div>

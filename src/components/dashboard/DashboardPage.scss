@@ -14,9 +14,11 @@
 }
 
 .card-header {
+    position: relative;
+    left: -40px;
     font-family: "Poppins", sans-serif;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 40px;
     width: 100%;
     padding: 0.9375rem 1.25rem;
     text-align: left;
@@ -25,15 +27,8 @@
     }
 }
 
-.your-schemes {
-    font-size: 25px;
-    margin-left: 50px;
-}
-
 .card-title {
-    position: relative;
-    top: -30px;
-    left: -30px;
+    font-weight: bold;
 }
 
 .card-body {
@@ -43,9 +38,7 @@
 }
 
 .media-list {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
+
 }
 
 h5 {
@@ -53,8 +46,10 @@ h5 {
 }
 
 .container {
+    position: relative;
+    left: -20px;
     width: 1480px;
-    margin: -10px auto;
+    margin-top: 15px;
 }
 
 

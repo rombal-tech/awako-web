@@ -6,11 +6,11 @@ const Checkboxes = () => (
 		<FormGroup>
 			<FormControlLabel
 				control={<Checkbox defaultChecked sx={{ color: '#292929', '&.Mui-checked': { color: '#292929' } }} />}
-				label="Согласен с политикой обработки персональных данных"
+				label="I agree with the policy of personal data processing"
 			/>
 			<FormControlLabel
 				control={<Checkbox defaultChecked sx={{ color: '#292929', '&.Mui-checked': { color: '#292929' } }} />}
-				label="Подписка на рассылку от DB Modeling"
+				label="Subscribe to DB Modeling newsletter"
 			/>
 		</FormGroup>
 	</div>

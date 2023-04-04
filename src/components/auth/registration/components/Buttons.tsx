@@ -15,7 +15,7 @@ const Buttons = () => (
 					marginTop: 2,
 				}}
 			>
-				Отправить код на почту
+				Send Code
 			</Button>
 		</NavLink>
 	</div>

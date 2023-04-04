@@ -3,7 +3,7 @@ import { Box } from '@material-ui/core';
 import Header from '../../home/header/header';
 import Controllers from './components/Controllers';
 import Buttons from './components/Buttons';
-import './components/loginValidation';
+import './components/Validation';
 import './LoginPage.scss';
 
 const LoginPage = () => (

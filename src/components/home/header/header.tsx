@@ -11,13 +11,13 @@ const Header = () => (
 					variant="text"
 					size="small"
 				>
-					<NavLink to="/registration">НАЧНИ МОДЕЛИРОВАНИЕ СЕЙЧАС</NavLink>
+					<NavLink to="/registration">Get Started Now</NavLink>
 				</Button>
 				<Button variant="text" color="inherit" size="small">
-					<NavLink to="/login">Войти</NavLink>
+					<NavLink to="/login">Login</NavLink>
 				</Button>
 				<Button variant="text" color="inherit" size="small">
-					<NavLink to="/">О компании</NavLink>
+					<NavLink to="/">About Us</NavLink>
 				</Button>
 			</Stack>
 		</Toolbar>

@@ -23,10 +23,10 @@ const CodePage = () => (
 				boxShadow="5px 5px 10px #ccc"
 			>
 				<Typography variant="h4" component="div">
-					Подтвердите регистрацию
+					Registration confirmation
 				</Typography>
 				<Typography variant="subtitle1" component="div" gutterBottom className="code-page-subtitle">
-					Введите код из полученного письма
+					Enter the code from the letter you received
 				</Typography>
 				<div className="code-page-form">
 					<Controllers />

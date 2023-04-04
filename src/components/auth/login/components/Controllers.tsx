@@ -2,7 +2,7 @@ import React from 'react';
 import { Controller, SubmitHandler, useForm, useFormState } from 'react-hook-form';
 import { TextField, Typography } from '@material-ui/core';
 import { ILoginPage } from '../ILoginPage';
-import { passwordValidation, emailValidation } from './loginValidation';
+import { passwordValidation, emailValidation } from './Validation';
 
 const onSubmit: SubmitHandler<ILoginPage> = (data) => console.log(data);
 const Controllers = () => {
@@ -13,10 +13,10 @@ const Controllers = () => {
 	return (
 		<>
 			<Typography variant="h4" component="div">
-				Войдите
+				Login
 			</Typography>
 			<Typography variant="subtitle1" component="div" gutterBottom className="login-page-subtitle">
-				Необходима авторизация
+				Authorization required
 			</Typography>
 			<form onSubmit={handleSubmit(onSubmit)}>
 				<Controller
@@ -25,7 +25,7 @@ const Controllers = () => {
 					name="email"
 					render={({ field }) => (
 						<TextField
-							label="Почта"
+							label="Email"
 							size="small"
 							margin="normal"
 							className="email-page-input"
@@ -45,7 +45,7 @@ const Controllers = () => {
 					name="password"
 					render={({ field }) => (
 						<TextField
-							label="Пароль"
+							label="Password"
 							size="small"
 							margin="normal"
 							className="password-page-input"

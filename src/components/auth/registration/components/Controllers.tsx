@@ -1,7 +1,7 @@
 import React from 'react';
 import { Controller, SubmitHandler, useForm, useFormState } from 'react-hook-form';
 import { TextField, Typography } from '@material-ui/core';
-import { emailValidation, passwordValidation } from './registerValidation';
+import { emailValidation, passwordValidation } from './Validation';
 import { IRegisterPage } from '../IRegisterPage';
  
 const onSubmit: SubmitHandler<IRegisterPage> = (data) => console.log(data);
@@ -14,13 +14,13 @@ const Controllers = () => {
 		<>
 			<div>
 				<Typography variant="h4" component="div">
-					Регистрация
+					Registration
 				</Typography>
 			</div>
 			<div className="instruction">
 				<form onSubmit={handleSubmit(onSubmit)}>
 					<Typography variant="subtitle1" component="div" gutterBottom>
-						Зарегистрируйся и создай свою модель бд
+						Register and create your database model
 					</Typography>
 					<Controller
 						control={control}
@@ -28,7 +28,7 @@ const Controllers = () => {
 						name="email"
 						render={({ field }) => (
 							<TextField
-								label="Почта"
+								label="Email"
 								size="small"
 								margin="normal"
 								className="register-page-input"
@@ -48,7 +48,7 @@ const Controllers = () => {
 						name="password"
 						render={({ field }) => (
 							<TextField
-								label="Пароль"
+								label="Password"
 								size="small"
 								margin="normal"
 								className="password-page-input"
@@ -62,7 +62,7 @@ const Controllers = () => {
 					/>
 				</form>
 				<Typography variant="subtitle1" component="div">
-					<h5>Необязательное поле</h5>
+					<h5>Optional field</h5>
 				</Typography>
 			</div>
 		</>

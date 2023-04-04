@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
@@ -36,11 +36,11 @@ const FadeMenu = () => {
 				onClose={handleClose}
 				TransitionComponent={Fade}
 			>
-				<MenuItem onClick={handleClose}>Редактировать</MenuItem>
-				<MenuItem onClick={handleClose}>Открыть для чтения</MenuItem>
-				<MenuItem onClick={handleClose}>Экспорировать</MenuItem>
-				<MenuItem onClick={handleClose}>Поделиться</MenuItem>
-				<MenuItem onClick={handleClose}>Удалить</MenuItem>
+				<MenuItem onClick={handleClose}>Edit</MenuItem>
+				<MenuItem onClick={handleClose}>Open to read</MenuItem>
+				<MenuItem onClick={handleClose}>Export</MenuItem>
+				<MenuItem onClick={handleClose}>Share</MenuItem>
+				<MenuItem onClick={handleClose}>Delete</MenuItem>
 			</Menu>
 		</div>
 	);

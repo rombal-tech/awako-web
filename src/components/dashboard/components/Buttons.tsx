@@ -9,24 +9,24 @@ const Buttons = () => {
 	return (
 		<div style={{ marginBottom: 40 }}>
 			<Button
-				size="small"
-				variant="outlined"
+				size="large"
+				variant="contained"
 				/* startIcon={<Icon />} */
 				color="inherit"
 				style={style}
 				disabled={false}
 			>
-				Создать схему
+				New Scheme
 			</Button>
 			<Button
-				size="small"
-				variant="outlined"
+				size="large"
+				variant="contained"
 				/* startIcon={<Icon />} */
 				color="inherit"
 				style={style}
 				disabled={false}
 			>
-				Импортировать
+				Import
 			</Button>
 		</div>
 	);
