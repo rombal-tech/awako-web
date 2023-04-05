@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from '@mui/icons-material/Delete';
+import ArrowDownward from '@mui/icons-material/Delete';
 import { Button } from '@material-ui/core';
 
 const Buttons = () => {
@@ -7,7 +7,7 @@ const Buttons = () => {
 		marginRight: 20,
 	};
 	return (
-		<div style={{ marginBottom: 40 }}>
+		<div className="new-selection" style={{ marginBottom: 40 }}>
 			<Button
 				size="large"
 				variant="contained"
@@ -21,7 +21,7 @@ const Buttons = () => {
 			<Button
 				size="large"
 				variant="contained"
-				/* startIcon={<Icon />} */
+				// startIcon={<ArrowDownward fontSize="inherit" />}
 				color="inherit"
 				style={style}
 				disabled={false}

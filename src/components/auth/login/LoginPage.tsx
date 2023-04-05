@@ -13,6 +13,7 @@ const LoginPage = () => (
 		</div>
 		<div className="login-page">
 			<Box
+				className="form-block"
 				display="flex"
 				justifyContent="center"
 				alignItems="center"

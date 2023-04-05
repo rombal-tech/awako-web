@@ -50,6 +50,7 @@ export default class DashboardPage extends Component <any, DashboardPageState> {
 						</div>
 					</div>
 					<Box
+						className="models-list"
 						display="flex"
 						justifyContent="center"
 						alignItems="center"

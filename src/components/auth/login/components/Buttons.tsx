@@ -15,7 +15,7 @@ const Buttons = () => (
 					marginTop: 2,
 				}}
 			>
-				Sign in
+				Log in
 			</Button>
 		</NavLink>
 		<div className="reg-question" style={{ marginTop: 15 }}>
