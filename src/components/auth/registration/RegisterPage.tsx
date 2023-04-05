@@ -13,6 +13,7 @@ const RegisterPage = () => (
 		</div>
 		<div className="register-page">
 			<Box
+				className="form-block"
 				display="flex"
 				justifyContent="center"
 				alignItems="center"

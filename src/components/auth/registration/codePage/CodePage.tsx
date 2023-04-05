@@ -12,6 +12,7 @@ const CodePage = () => (
 		</div>
 		<div className="code-page">
 			<Box
+				className="form-block"
 				display="flex"
 				justifyContent="center"
 				alignItems="center"
