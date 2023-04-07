@@ -5,7 +5,7 @@
 
 .card {
     display: flex;
-    padding: 10vh;
+    padding: 8vh;
     flex-direction: column;
     align-items: center;
     text-align: left;
@@ -14,12 +14,12 @@
 
 .card-header {
     position: relative;
-    left: -40px;
+    left: -25px;
     font-family: "Poppins", sans-serif;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 35px;
     width: 100%;
-    padding: 0.9375rem 1.25rem;
+    padding: 0.9rem 1.25rem;
     text-align: left;
     .card-title {
     margin-bottom: 0;
@@ -32,12 +32,13 @@
 
 .card-body {
     flex: 1 1 auto;
-    padding: 1.25rem;
+    padding: 0.4rem;
     width: 100%;
 }
 
-.models-list {
+.box {
     background-color: #fff;
+
 }
 
 h5 {
@@ -46,7 +47,7 @@ h5 {
 
 .container {
     position: relative;
-    left: -20px;
+    left: -5px;
     width: 1480px;
     margin-top: 15px;
 }
@@ -54,4 +55,24 @@ h5 {
 .new-selection a {
     color: white;
     text-decoration: none
+}
+
+.pagination {
+    align-items: center;
+}
+
+.schematics-count {
+    color: rgb(156, 156, 159);
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+.filter-inside {
+    align-items: end;
+}
+
+.filter-button {
+    position: relative;
+    left: 1605px;
 }
