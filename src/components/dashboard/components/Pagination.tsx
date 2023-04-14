@@ -3,17 +3,16 @@ import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 
 const ListPagination = () => (
-
 	<Stack 
 		spacing={2} 
 		className="pagination" 
 		style={{ 
-			marginTop: 15,
+			marginTop: 5,
 			marginBottom: 15,
 		}}
 	>
 		<Pagination
-			count={10}
+			count={6}
 			showFirstButton
 			showLastButton
 			shape="rounded"
