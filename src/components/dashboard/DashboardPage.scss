@@ -14,7 +14,7 @@
 
 .card-header {
     position: relative;
-    left: -25px;
+    left: -15px;
     font-family: "Poppins", sans-serif;
     font-weight: normal;
     font-size: 35px;
@@ -30,7 +30,7 @@
     font-weight: bold;
 }
 
-.card-body {
+.schemas {
     flex: 1 1 auto;
     padding: 0.4rem;
     width: 100%;
@@ -38,23 +38,16 @@
 
 .box {
     background-color: #fff;
-
 }
 
 h5 {
     font-weight: normal;
 }
 
-.container {
+.possibilities {
     position: relative;
-    left: -5px;
     width: 1480px;
     margin-top: 15px;
-}
-
-.new-selection a {
-    color: white;
-    text-decoration: none
 }
 
 .pagination {
@@ -64,15 +57,46 @@ h5 {
 .schematics-count {
     color: rgb(156, 156, 159);
     position: relative;
-    top: 50px;
+    top: 40px;
     left: 30px;
-}
-
-.filter-inside {
-    align-items: end;
 }
 
 .filter-button {
     position: relative;
-    left: 1605px;
+    bottom: 10px;
+    left: 5px;
+}
+
+.creation-date {
+    position: relative;
+    left: 530px;
+}
+
+.last-modified {
+    position: relative;
+    left: 325px;
+}
+
+.name-row {
+    position: relative;
+    right: 140px;
+}
+
+.creation-date-row {
+    position: relative;
+    left: 450px;
+}
+
+.last-modified-row {
+    position: relative;
+    left: 128px;
+}
+
+.table-header {
+    margin-top: -10px;
+}
+
+.filter {
+    position: relative;
+    left: 800px;
 }
