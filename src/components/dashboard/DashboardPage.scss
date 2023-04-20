@@ -10,25 +10,16 @@
     align-items: center;
     text-align: left;
     width: 100%;
+
 }
 
 .card-header {
-    position: relative;
-    left: -15px;
+    margin-top: 90px;
+    margin-left: 90px;
     font-family: "Poppins", sans-serif;
-    font-weight: normal;
-    font-size: 35px;
-    width: 100%;
-    padding: 0.9rem 1.25rem;
-    text-align: left;
-    .card-title {
-    margin-bottom: 0;
-    }
+
 }
 
-.card-title {
-    font-weight: bold;
-}
 
 .schemas {
     flex: 1 1 auto;
@@ -37,17 +28,20 @@
 }
 
 .box {
-    background-color: #fff;
+    background: #E7EEF7;
+    box-shadow: 1px 1px 10px 5px #fff;
+    padding: 1px;
+    border-radius: 3px;
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 h5 {
     font-weight: normal;
-}
-
-.possibilities {
-    position: relative;
-    width: 1480px;
-    margin-top: 15px;
 }
 
 .pagination {
@@ -55,16 +49,48 @@ h5 {
 }
 
 .schematics-count {
-    color: rgb(156, 156, 159);
+    color: #BBCAD9;
     position: relative;
-    top: 40px;
+    top: 30px;
     left: 30px;
 }
 
-.filter-button {
+.schemas-text {
+    color: #BBCAD9;
+    font-size: 35px;
+    font-family: inherit;
+    font-weight: 800;
     position: relative;
-    bottom: 10px;
-    left: 5px;
+    right: 790px;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border-width: 0;
+    background: #E7EEF7;
+    color: #BBCAD9;
+    box-shadow: 1px 1px 10px 3px #fff;
+}
+
+.filter-button:hover {
+    transform: translate(5px);
+    box-shadow: 1px 1px 5px 1px #BBCAD9;
+}
+
+.filter {
+    position: relative;
+    left: 805px;
+}
+
+.menu-items {
+    background: #E7EEF7;
+    color: #BBCAD9;
+    border-radius: 10px;
 }
 
 .creation-date {
@@ -96,7 +122,45 @@ h5 {
     margin-top: -10px;
 }
 
-.filter {
+.buttons {
+    margin-bottom: 10px;
+    margin-right: 25px;
+    font-size: 35px;
+    color: #BBCAD9;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
     position: relative;
-    left: 800px;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
 }
+
+.buttons:focus,
+.buttons:hover {
+    color: #fff;
+}
+
+.buttons:focus:after,
+.buttons:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.buttons:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+

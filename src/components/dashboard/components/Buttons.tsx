@@ -1,33 +1,22 @@
-import React from 'react';
-import ArrowDownward from '@mui/icons-material/Delete';
-import { Button } from '@material-ui/core';
+import React, { useState } from 'react';
 
 const Buttons = () => {
-	const style = {
-		marginRight: 20,
-	};
+	const [onClick, setClick] = useState();
+
 	return (
-		<div className="new-selection" style={{ marginBottom: 40 }}>
-			<Button
-				size="large"
-				variant="contained"
-				/* startIcon={<Icon />} */
-				color="inherit"
-				style={style}
-				disabled={false}
+		<div>
+			<button
+				className="buttons"
+				type="submit"
 			>
 				New Scheme
-			</Button>
-			<Button
-				size="large"
-				variant="contained"
-				// startIcon={<ArrowDownward fontSize="inherit" />}
-				color="inherit"
-				style={style}
-				disabled={false}
+			</button>
+			<button
+				className="buttons"
+				type="submit"
 			>
 				Import
-			</Button>
+			</button>
 		</div>
 	);
 };

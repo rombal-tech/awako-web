@@ -67,28 +67,17 @@ export default class DashboardPage extends Component <any, DashboardPageState> {
 				<div>
 					<Header />
 				</div>
-				<div className="card">
-					<div className="card-header">
-						<h5 className="card-title">Possibilities</h5>
-						<div className="possibilities">
-							<Buttons />
-						</div>
-						<h5 className="card-title"> Schematics</h5>
+				<div className="card-header">
+					<div className="btns-new-selection">
+						<Buttons />
 					</div>
+				</div>
+				<div className="card">
+					<text className="schemas-text">Schemas:</text>
 					<div className="filter">
 						<Filter />
 					</div>
-					<Box
-						display="flex"
-						justifyContent="center"
-						alignItems="center"
-						flexDirection="column"
-						margin="auto"
-						padding={1}
-						borderRadius={3}
-						boxShadow="5px 5px 10px #ccc"
-						width="100%"
-					>
+					<Box className="box">
 						<div className="schemas">
 							<ProjectsList
 								items={DBSchemas}
