@@ -5,41 +5,108 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f1f1f1;
+    text-align: center;
+    background-color: white;
 }
 
-.form-block {
-    background-color: #fff;
+.box-reg-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    height: 650px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+    border-width: 1px;
+    background: white;
+    color: black;
+    box-shadow: 0.1px 0.1px 3px #ccc;
 }
 
-//.background-photo-reg {
-//    height: 100vh;
-//    background: no-repeat url(components/background.jpg);
-//    background-size: cover;
-//}
-
-.instruction {
-    color: rgb(180, 184, 193);
-    text-align: left;
-}
-
-.page-controllers {
-    width: 400px;
-}
-
-.register-button-confirm {
-    width: 400px;
-}
-
-.send-code {
-    a {
-        text-decoration: none;
-    }
-}
-
-.checkBoxes {
+.registration {
     position: relative;
-    left: 6px;
+    top: 30px;
+    text-align: center;
 }
 
+.reg-inputs {
+    margin-bottom: 15px;
+    font-size: 15px;
+    position: relative;
+    top: 80px;
+    width: 100%;
+    max-width: 400px;
+    height: 60px;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.reg-inputs:active {
+    transform: scale(0.95);
+}
+
+.reg-inputs:focus {
+    border: 1.5px solid #ED760E;
+}
+.subtitle {
+    position: relative;
+    top: 75px;
+    right: 150px;
+    color: rgb(180, 184, 193);
+}
+
+.checkbox {
+    position: relative;
+    top: 50px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+}
+
+.button-send-code {
+    position: relative;
+    top: 85px;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    min-width: 400px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 0 20px -20px;
+    cursor: pointer;
+    color: white;
+    background-color: #ED760E;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button-send-code:hover {
+    background-color: #FFCA86;
+    box-shadow: 0 0 20px -18px;
+}
+
+.button-send-code:active {
+    transform: scale(0.95);
+}
 

@@ -1,28 +1,126 @@
 .code-page {
-    display: flex;
-    height: 100vh;
-    padding: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #f1f1f1;
+	display: flex;
+	height: 100vh;
+	padding: 20px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: white;
 }
 
+.box-code-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 500px;
+	height: 550px;
+	margin: auto;
+	padding: 40px;
+	border-radius: 10px;
+	border-width: 1px;
+	background: white;
+	color: black;
+	box-shadow: 0.1px 0.1px 3px #ccc;
+}
 
 .code-page-subtitle {
-    color: rgb(180, 184, 193);
+	color: rgb(180, 184, 193);
+	text-decoration: none;
+}
+
+.question {
+	position: relative;
+	top: 60px;
+	margin-top: 60px;
+	color: rgb(180, 184, 193);
 }
 
 .code-page-form {
-    width: 475px;
+	text-align: left;
 }
 
-.code-button-confirm {
-    width: 475px;
+.send-code {
+	margin-top: 15px;
 }
 
 .send-code a {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
+}
+
+.confirmation-form {
+	justify-content: start;
+	align-items: start;
+}
+
+.btn-send-code {
+	position: relative;
+	top: 60px;
+	color: #ED760E;
+	text-decoration: none;
+}
+
+.confirmation {
+	position: relative;
+	top: 40px;
+	text-align: center;
+}
+
+.write-your-code {
+	color: rgb(180, 184, 193);
+	position: relative;
+	top: 80px;
+	text-align: left;
+}
+
+.code-input {
+	font-size: 15px;
+	position: relative;
+	top: 90px;
+	width: 100%;
+	max-width: 400px;
+	height: 60px;
+	padding: 25px;
+	border-radius: 8px;
+	border: 1.5px solid lightgrey;
+	outline: none;
+	transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.code-input:active {
+	transform: scale(0.95);
+}
+
+.code-input:focus {
+	border: 1.5px solid #ED760E;
+}
+
+.btn-confirm {
+	position: relative;
+	top: 90px;
+	font-weight: bold;
+	margin-top: 25px;
+	min-width: 400px;
+	height: 50px;
+	padding: 8px;
+	border-radius: 25px;
+	border: none;
+	box-shadow: 0 0 20px -20px;
+	cursor: pointer;
+	color: white;
+	background-color: #ED760E;
+	transition: all 0.2s ease-in-out 0ms;
+	user-select: none;
+	font-family: 'Poppins', sans-serif;
+}
+
+.btn-confirm:hover {
+	background-color: #FFCA86;
+	box-shadow: 0 0 20px -18px;
+}
+
+.btn-confirm:active {
+	transform: scale(0.95);
 }

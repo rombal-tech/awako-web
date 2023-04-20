@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import './header.css';
 
 const Header = () => (
-	<AppBar position="fixed" style={{ backgroundColor: 'rgb(0,0,0.5)' }} className="appBar">
+	<AppBar position="fixed" style={{ backgroundColor: '#E7EEF7' }} className="appBar">
 		<Toolbar variant="dense">
 			<Stack spacing={2} direction="row" className="login-button">
 				<Button
