@@ -5,7 +5,7 @@ import MouseUpObserver from './observers/mouseObservers/MouseUpObserver';
 import KeyDownObserver from './observers/keyObservers/KeyDownObserver';
 import KeyUpObserver from './observers/keyObservers/KeyUpObserver';
 
-class Constructor {
+class Manipulator {
 	private readonly containerElement: HTMLElement;
 	private readonly mouseOffsetObserver: MouseOffsetObserver;
 	private readonly mouseDownObserver: MouseDownObserver;
@@ -35,6 +35,10 @@ class Constructor {
 
 		this.containerElement.append(cameraElement);
 	}
+
+	public destruct = () => {
+		// TODO
+	};
 }
 
-export default Constructor;
+export default Manipulator;
