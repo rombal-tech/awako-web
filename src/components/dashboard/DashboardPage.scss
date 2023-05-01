@@ -28,8 +28,8 @@
 }
 
 .box {
-    background: #E7EEF7;
-    box-shadow: 1px 1px 10px 5px #fff;
+    background: #fff;
+    box-shadow: 0.1px 0.1px 8px #ED760E;
     padding: 1px;
     border-radius: 3px;
     width: 100%;
@@ -49,14 +49,14 @@ h5 {
 }
 
 .schematics-count {
-    color: #BBCAD9;
+    color: #ED760E;
     position: relative;
     top: 30px;
     left: 30px;
 }
 
 .schemas-text {
-    color: #BBCAD9;
+    color: #FFCA86;
     font-size: 35px;
     font-family: inherit;
     font-weight: 800;
@@ -72,14 +72,14 @@ h5 {
     margin-right: 20px;
     margin-bottom: 15px;
     border-width: 0;
-    background: #E7EEF7;
-    color: #BBCAD9;
-    box-shadow: 1px 1px 10px 3px #fff;
+    background: #ED760E;
+    color: #ED760E;
+    box-shadow: 1px 1px 10px 3px #ED760E;
 }
 
 .filter-button:hover {
     transform: translate(5px);
-    box-shadow: 1px 1px 5px 1px #BBCAD9;
+    box-shadow: 1px 1px 5px 1px #ED760E;
 }
 
 .filter {
@@ -88,8 +88,8 @@ h5 {
 }
 
 .menu-items {
-    background: #E7EEF7;
-    color: #BBCAD9;
+    background: #ED760E;
+    color: #ED760E;
     border-radius: 10px;
 }
 
@@ -122,45 +122,31 @@ h5 {
     margin-top: -10px;
 }
 
-.buttons {
-    margin-bottom: 10px;
-    margin-right: 25px;
-    font-size: 35px;
-    color: #BBCAD9;
-    font-family: inherit;
-    font-weight: 800;
-    cursor: pointer;
+.button-send-code {
     position: relative;
+    top: 85px;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    min-width: 400px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 25px;
     border: none;
-    background: none;
-    text-transform: uppercase;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: color;
+    box-shadow: 0 0 20px -20px;
+    cursor: pointer;
+    color: white;
+    background-color: #ED760E;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
 }
 
-.buttons:focus,
-.buttons:hover {
-    color: #fff;
+.button-send-code:hover {
+    background-color: #FFCA86;
+    box-shadow: 0 0 20px -18px;
 }
 
-.buttons:focus:after,
-.buttons:hover:after {
-    width: 100%;
-    left: 0%;
+.button-send-code:active {
+    transform: scale(0.95);
 }
-
-.buttons:after {
-    content: "";
-    pointer-events: none;
-    bottom: -2px;
-    left: 50%;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: #fff;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: width, left;
-}
-

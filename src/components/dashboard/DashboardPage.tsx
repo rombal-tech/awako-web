@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Box } from '@material-ui/core';
-import Header from '../home/header/header';
+import Navbar from '../home/navbar/Navbar';
 import ProjectsList from './components/ProjectsList';
 import Buttons from './components/Buttons';
 import ListPagination from './components/Pagination';
@@ -65,7 +65,7 @@ export default class DashboardPage extends Component <any, DashboardPageState> {
 		return (
 			<>
 				<div>
-					<Header />
+					<Navbar />
 				</div>
 				<div className="card-header">
 					<div className="btns-new-selection">
