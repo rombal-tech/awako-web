@@ -4,6 +4,7 @@ import MouseDownObserver from './observers/mouseObservers/MouseDownObserver';
 import MouseUpObserver from './observers/mouseObservers/MouseUpObserver';
 import KeyDownObserver from './observers/keyObservers/KeyDownObserver';
 import KeyUpObserver from './observers/keyObservers/KeyUpObserver';
+import API from '../api/API';
 
 class Manipulator {
 	private readonly containerElement: HTMLElement;
@@ -15,7 +16,6 @@ class Manipulator {
 	private readonly camera: ConstructorCamera;
 
 	constructor(container: HTMLElement) {
-		// точка входа
 		this.containerElement = container;
 
 		this.mouseUpObserver = new MouseUpObserver();
