@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './header/header';
+import Navbar from './navbar/Navbar';
 
 const HomePage = () => (
 	<div className="home-page">
-		<Header />
+		<Navbar />
 	</div>
 );
 

@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/Poppins-Black.ttf) format('ttf');
+}
+
+.card {
+    display: flex;
+    padding: 8vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+
+}
+
+.card-header {
+    margin-top: 90px;
+    margin-left: 90px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.schemas {
+    flex: 1 1 auto;
+    padding: 0.4rem;
+    width: 100%;
+}
+
+.box {
+    background: #fff;
+    box-shadow: 0.1px 0.1px 8px #ED760E;
+    padding: 1px;
+    border-radius: 3px;
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+h5 {
+    font-weight: normal;
+}
+
+.pagination {
+    align-items: center;
+}
+
+.schematics-count {
+    color: #ED760E;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.schemas-text {
+    color: #FFCA86;
+    font-size: 35px;
+    font-family: inherit;
+    font-weight: 800;
+    position: relative;
+    right: 790px;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border-width: 0;
+    background: #ED760E;
+    color: #ED760E;
+    box-shadow: 1px 1px 10px 3px #ED760E;
+}
+
+.filter-button:hover {
+    transform: translate(5px);
+    box-shadow: 1px 1px 5px 1px #ED760E;
+}
+
+.filter {
+    position: relative;
+    left: 805px;
+}
+
+.menu-items {
+    background: #ED760E;
+    color: #ED760E;
+    border-radius: 10px;
+}
+
+.creation-date {
+    position: relative;
+    left: 530px;
+}
+
+.last-modified {
+    position: relative;
+    left: 325px;
+}
+
+.name-row {
+    position: relative;
+    right: 140px;
+}
+
+.creation-date-row {
+    position: relative;
+    left: 450px;
+}
+
+.last-modified-row {
+    position: relative;
+    left: 128px;
+}
+
+.table-header {
+    margin-top: -10px;
+}
+
+.button-send-code {
+    position: relative;
+    top: 85px;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    min-width: 400px;
+    height: 50px;
+    padding: 8px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0 0 20px -20px;
+    cursor: pointer;
+    color: white;
+    background-color: #ED760E;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button-send-code:hover {
+    background-color: #FFCA86;
+    box-shadow: 0 0 20px -18px;
+}
+
+.button-send-code:active {
+    transform: scale(0.95);
+}

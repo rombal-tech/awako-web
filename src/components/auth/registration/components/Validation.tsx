@@ -1,4 +1,4 @@
-const REQUIRED_FIELD = 'Обязательно для заполнения';
+const REGISTER_REQUIRED_FIELD = 'Required field';
 const EMAIL_REGEXP = new RegExp(
 	[
 		'^(([^<>()[\\].,;:\\s@"]+(.[^<>()[\\].,;:\\s@"]+)*)|(".+"))@',
@@ -7,23 +7,26 @@ const EMAIL_REGEXP = new RegExp(
 	'iu',
 );
 export const emailValidation = {
-	required: REQUIRED_FIELD,
+	required: REGISTER_REQUIRED_FIELD,
 	validate: (value: string) => {
 		if (value.match(/[А-я]/)) {
-			return 'Почта не может содержать русские буквы';
+			return 'Mail cannot contain Cyrillic letters';
 		}
 		if (!value.match(EMAIL_REGEXP)) {
-			return 'Неверная валидация';
+			return 'Invalid validation';
 		}
 		return true;
 	},
 };
 
 export const passwordValidation = {
-	required: REQUIRED_FIELD,
+	required: false,
 	validate: (value: string) => {
 		if (value.length < 6) {
-			return 'Пароль должен быть не менее 6 символов';
+			return 'Password must be at least 6 characters long';
+		}
+		if (value.length >= 21) {
+			return 'Number of characters exceeded';
 		}
 		return true;
 	},

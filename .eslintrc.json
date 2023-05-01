@@ -25,6 +25,7 @@
         "optimize-regex"
     ],
     "rules": {
+        "react/jsx-props-no-spreading": "off",
         "object-curly-newline": "off",
         "import/no-extraneous-dependencies": "off",
         "optimize-regex/optimize-regex": "warn",
