@@ -5,6 +5,7 @@ import LoginPage from '../auth/login/LoginPage';
 import RegisterPage from '../auth/registration/RegisterPage';
 import CodePage from '../auth/registration/codePage/CodePage';
 import DashboardPage from '../dashboard/DashboardPage';
+import SchemeManipulator from '../../constructor/SchemeManipulator';
 
 const Router = () => (
 	<div className="router">
@@ -16,6 +17,7 @@ const Router = () => (
 			<Route path="/account/confirm/000000" element={<CodePage />} />
 			<Route path="/login" element={<LoginPage />} />
 			<Route path="/registration" element={<RegisterPage />} />
+			<Route path="/manipulator" element={<SchemeManipulator />} />
 		</Routes>
 	</div>
 );
