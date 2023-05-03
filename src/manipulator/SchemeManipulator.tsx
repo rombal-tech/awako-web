@@ -11,7 +11,6 @@ class ConstructorComponent extends React.Component<any, any> {
 		if (container === null || container === undefined) {
 			throw new Error('manipulator container not found');
 		}
-
 		this.manipulator = new Manipulator(container);
 	}
 
