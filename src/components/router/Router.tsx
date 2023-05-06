@@ -5,7 +5,7 @@ import LoginPage from '../auth/login/LoginPage';
 import RegisterPage from '../auth/registration/RegisterPage';
 import CodePage from '../auth/registration/codePage/CodePage';
 import DashboardPage from '../dashboard/DashboardPage';
-import SchemeManipulator from '../../constructor/SchemeManipulator';
+import SchemeManipulator from '../../manipulator/SchemeManipulator';
 
 const Router = () => (
 	<div className="router">

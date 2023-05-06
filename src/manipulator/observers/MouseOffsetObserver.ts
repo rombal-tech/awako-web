@@ -6,7 +6,7 @@ interface MouseOffsetSubscriber {
 	action: MouseOffsetObserverAction
 }
 
-// MouseOffsetObserver уведомляет подписчиков о движении мыши с передачей сдвига
+/** Реализация паттерна наблюдатель для передачи всем подписчикам при движении мыши её сдвиг. */
 class MouseOffsetObserver {
 	private readonly subscribers: MouseOffsetSubscriber[];
 	private lastX: number | null;
