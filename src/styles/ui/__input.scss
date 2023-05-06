@@ -1,0 +1,11 @@
+@import "src/variables";
+
+.ui__input {
+  outline: none;
+  padding-left: 34px;
+  border: 2px $input_border solid;
+
+  &::placeholder {
+    font-weight: 400;
+  }
+}

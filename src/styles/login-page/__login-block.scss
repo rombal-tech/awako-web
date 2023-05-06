@@ -1,0 +1,24 @@
+.login-page__login-block {
+  width: 530px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  > h1 {
+    padding: 150px 0 72px;
+    font-weight: 600;
+  }
+
+  > .login-frame__input {
+    width: 100%;
+    padding: 20px 0 20px 34px;
+  }
+
+  > .login-frame__input_email {
+    margin-bottom: 28px;
+  }
+
+  > .login-frame__input_password {
+    margin-bottom: 8px;
+  }
+}

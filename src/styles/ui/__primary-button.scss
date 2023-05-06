@@ -1,0 +1,12 @@
+@import "src/variables";
+
+.ui__primary-button {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 300;
+  color: $primary-button_content;
+  background: $primary-button_background;
+}

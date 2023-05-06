@@ -1,0 +1,10 @@
+@import "src/variables";
+
+.ui__secondary-button {
+  background: none;
+  border: none;
+  color: $secondary-button_content;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 2px;
+}

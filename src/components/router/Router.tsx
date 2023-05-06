@@ -1,4 +1,5 @@
 import React from 'react';
+import './Router.scss';
 import { Route, Routes } from 'react-router-dom';
 import HomePage from '../home/HomePage';
 import LoginPage from '../auth/login/LoginPage';

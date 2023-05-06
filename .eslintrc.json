@@ -25,6 +25,9 @@
         "optimize-regex"
     ],
     "rules": {
+        "no-unneeded-ternary": "off",
+        "react/require-default-props": "off",
+        "react/no-unused-prop-types": "off",
         "react/jsx-props-no-spreading": "off",
         "object-curly-newline": "off",
         "import/no-extraneous-dependencies": "off",

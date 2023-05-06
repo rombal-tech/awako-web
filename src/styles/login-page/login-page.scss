@@ -1,0 +1,10 @@
+@import "_login-block";
+@import "_registration-box";
+@import "_forgot-password-box";
+@import "_login-button";
+
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
