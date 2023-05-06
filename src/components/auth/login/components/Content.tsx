@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 
 const Content = () => (
 	<>
-		<Typography variant="h4" component="div" className="login">
-			Login
-		</Typography>
+		<text className="login">
+			<h4>Log in</h4>
+		</text>
 		<input
 			className="login-inputs"
 			type="email"
@@ -17,31 +17,29 @@ const Content = () => (
 			type="password"
 			placeholder="Password"
 		/>
+		<NavLink to="/" className="button-forgot-password">
+			<Typography>
+				Forgot password?
+			</Typography>
+		</NavLink>
 		<div className="login-button-confirm">
 			<NavLink to="/dashboard">
 				<button
-					className="btn-login"
+					className="button-login"
 					type="submit"
 				>
-					Log in
+					Login
 				</button>
 			</NavLink>
-			<NavLink to="/registration" className="btn-question-one">
+			<Typography className="not-registered-yet">
+				Not registered yet?
+			</Typography>
+			<NavLink to="/registration" className="link-to-registration">
 				<Typography
-					variant="subtitle1"
 					component="div"
 					gutterBottom
 				>
-					Not registered yet?
-				</Typography>
-			</NavLink>
-			<NavLink to="/" className="btn-question-two">
-				<Typography
-					variant="subtitle1"
-					component="div"
-					gutterBottom
-				>
-					Forgot password?
+					Registration
 				</Typography>
 			</NavLink>
 		</div>

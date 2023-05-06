@@ -1,3 +1,4 @@
+
 .login-page {
     display: flex;
     height: 100vh;
@@ -14,87 +15,104 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 500px;
-    height: 600px;
+    width: 530px;
+    height: 750px;
     margin: auto;
     padding: 40px;
-    border-radius: 10px;
-    border-width: 1px;
     background: white;
-    color: black;
-    box-shadow: 0.1px 0.1px 3px #ccc;
+    color: rgba(0, 0, 0, 0.6);
+    border: solid 2px;
 }
 
 .login {
+    font-weight: 600;
     position: relative;
     top: 50px;
     text-align: center;
+    font-size: 32px;
 }
 
 .login-inputs {
-    font-size: 15px;
-    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 25px;
     position: relative;
-    top: 80px;
+    top: 120px;
     width: 100%;
     max-width: 400px;
-    height: 60px;
+    height: 62px;
     padding: 25px;
-    border-radius: 8px;
-    border: 1.5px solid lightgrey;
+    border: 2px solid rgba(0, 0, 0, 0.6);
     outline: none;
-    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 0.3s;
+}
+
+.login-inputs:hover {
+    border: 2px solid rgb(82, 0, 89);
 }
 
 .login-inputs:active {
-    transform: scale(0.95);
+    transform: scale(0.9);
 }
 
 .login-inputs:focus {
-    border: 1.5px solid #ED760E;
+    border: 2px solid #520059;
 }
 
-.btn-login {
+.button-login {
+    font-weight: 400;
     position: relative;
-    top: 85px;
-    font-weight: bold;
-    margin-top: 25px;
+    top: 115px;
+    margin-top: 10px;
     margin-bottom: 30px;
     min-width: 400px;
-    height: 50px;
+    height: 62px;
     padding: 8px;
-    border-radius: 25px;
     border: none;
-    box-shadow: 0 0 20px -20px;
     cursor: pointer;
     color: white;
-    background-color: #ED760E;
+    background-color: rgba(82, 0, 89, 0.8);
     transition: all 0.2s ease-in-out 0ms;
     user-select: none;
-    font-family: 'Poppins', sans-serif;
 }
 
-.btn-login:hover {
-    background-color: #FFCA86;
+.button-login:hover {
+    background-color: rgb(85, 0, 94);
     box-shadow: 0 0 20px -18px;
 }
 
-.btn-login:active {
+.button-login:active {
     transform: scale(0.95);
 }
 
-.btn-question-one {
+.not-registered-yet {
+    font-weight: 300;
+    font-size: 14px;
     position: relative;
     text-align: left;
-    top: 80px;
-    color: #ED760E;
+    left: 80px;
+    top: 110px;
+    color: rgba(192, 192, 192, 0.9);
     text-decoration: none;
 }
 
-.btn-question-two {
+.button-forgot-password {
+    font-weight: 300;
+    font-size: 14px;
     position: relative;
     text-align: left;
-    top: 80px;
-    color: #ED760E;
+    top: 105px;
+    left: 20px;
+    color: rgba(82, 0, 89, 0.7);
     text-decoration: none;
+}
+
+.link-to-registration {
+    font-weight: 300;
+    position: relative;
+    top: 85px;
+    left: 65px;
+    text-decoration: none;
+    color: rgba(82, 0, 89, 0.7);
+    font-size: 14px;
 }

@@ -10,7 +10,7 @@ export const MenuData = [
 	{
 		index: 1,
 		title: 'Create Model',
-		url: '#',
+		url: '/manipulator',
 		cName: 'nav-links',
 		icon: 'fa-solid fa-plus',
 	},
