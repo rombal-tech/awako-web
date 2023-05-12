@@ -1,0 +1,11 @@
+@import "_register-block";
+@import "_authentication-box";
+@import "_optional-field-box";
+@import "_register-button";
+@import "_policy-of-personal-data-processing-box";
+
+.register-page {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

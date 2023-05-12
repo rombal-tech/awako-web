@@ -1,15 +1,9 @@
 import React from 'react';
-import { Box } from '@material-ui/core';
-import Content from './components/Content';
-import './RegisterPage.scss';
+import RegisterBlock from './RegisterBlock';
 
 const RegisterPage = () => (
 	<div className="register-page">
-		<Box className="box-reg-page">
-			<div className="reg-page-form">
-				<Content />
-			</div>
-		</Box>
+		<RegisterBlock />
 	</div>
 );
 

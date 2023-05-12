@@ -1,6 +1,7 @@
 @import "colors";
 
 $primary: #520059;
+$dark-primary: #490050;
 
 $text-secondary: $grey400;
 
@@ -9,5 +10,9 @@ $input_border: $grey800;
 
 $primary-button_content: $white;
 $primary-button_background: $primary;
+$primary-button_border: $primary;
+$primary-button_border-color: $primary;
+$primary-button_background-color: $dark-primary;
 
 $secondary-button_content: $primary;
+

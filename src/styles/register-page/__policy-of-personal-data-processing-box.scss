@@ -1,0 +1,23 @@
+.register-frame__policy-of-personal-data-processing-box {
+	display: flex;
+	width: 100%;
+	justify-content: left;
+	padding-left: 3px;
+	margin-bottom: 30px;
+
+	> p {
+		font-size: 14px;
+		color: $text-secondary;
+		font-weight: 300;
+	}
+
+
+	.register-frame__checkbox-content-box {
+		font-size: 14px;
+		color: $text-secondary;
+		font-weight: 300;
+	}
+	> .register-frame__checkbox-content-box > input {
+		margin-right: 0.525em;
+	}
+}

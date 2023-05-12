@@ -1,0 +1,13 @@
+.register-frame__optional-field-box {
+	display: flex;
+	width: 100%;
+	justify-content: left;
+	padding-left: 3px;
+	margin-bottom: 5px;
+
+	> p {
+		font-size: 14px;
+		color: $text-secondary;
+		font-weight: 300;
+	}
+}

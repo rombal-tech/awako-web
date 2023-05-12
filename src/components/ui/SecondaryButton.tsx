@@ -10,7 +10,13 @@ const SecondaryButton = (props: ISecondaryButtonProps) => {
 	const { content, onClick, className } = props;
 
 	return (
-		<button className={`ui__secondary-button ${className}`} type="button" onClick={onClick}>{ content }</button>
+		<button
+			className={`ui__secondary-button ${className}`}
+			type="button"
+			onClick={onClick}
+		>
+			{ content }
+		</button>
 	);
 };
 

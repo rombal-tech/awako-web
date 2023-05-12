@@ -1,11 +1,25 @@
 @import "src/variables";
 
 .ui__input {
-  outline: none;
-  padding-left: 34px;
-  border: 2px $input_border solid;
+	outline: none;
+	padding-left: 34px;
+	border: 2px $input_border solid;
+	transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 
-  &::placeholder {
-    font-weight: 400;
-  }
+	&::placeholder {
+		font-weight: 400;
+	}
+
+	&:hover {
+		border-color: $primary-button_border-color;
+	}
+
+	&:active {
+		transform: scale(0.95);
+	}
+
+	&:focus {
+		border: 2px solid $primary-button_border;
+	}
+
 }
