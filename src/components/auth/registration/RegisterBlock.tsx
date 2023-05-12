@@ -6,8 +6,8 @@ import CheckBox from '../../ui/CheckBox';
 import PrimaryButton from '../../ui/PrimaryButton';
 import SecondaryButton from '../../ui/SecondaryButton';
 
-const onSendCodeClick = () => {
-	console.log('Send Code click');
+const onNextStepClick = () => {
+	console.log('NextStep click');
 };
 
 const onAuthenticationClick = () => {
@@ -29,7 +29,7 @@ const RegisterBlock = () => (
 		<div className="register-frame__policy-of-personal-data-processing-box">
 			<CheckBox content="I agree with the policy of personal data processing" onChange={onCheckBoxClick} />
 		</div>
-		<PrimaryButton className="register-frame__register-button" content="Send Code" onClick={onSendCodeClick} />
+		<PrimaryButton className="register-frame__register-button" content="Next step" onClick={onNextStepClick} />
 		<div className="register-frame__authentication-box">
 			<p>Already registered?</p>
 			<SecondaryButton content="Authentication" onClick={onAuthenticationClick} />

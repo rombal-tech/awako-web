@@ -1,0 +1,10 @@
+@import "__confirmation-block";
+@import "__confirmation-button";
+@import "__sending-code-again-box";
+@import "__sending-code-to-email-box";
+
+.confirmation-page {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
