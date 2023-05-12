@@ -1,0 +1,14 @@
+.password-recovery-frame__sending-link-to-email-box {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding-left: 3px;
+	margin-bottom: 5px;
+
+	> p {
+		padding: 0 0 50px 0;
+		font-size: 14px;
+		color: $text-secondary;
+		font-weight: 300;
+	}
+}
