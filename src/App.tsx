@@ -1,9 +1,8 @@
 import React from 'react';
+import Router from './components/router/Router';
 
 const App = () => (
-	<div>
-		h
-	</div>
+	<Router />
 );
 
 export default App;
