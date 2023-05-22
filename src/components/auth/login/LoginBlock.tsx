@@ -6,16 +6,16 @@ import SecondaryButton from '../../ui/SecondaryButton';
 import ContentPrimaryFrame from '../../ui/ContentPrimaryFrame';
 import PrimaryButton from '../../ui/PrimaryButton';
 
-const onForgotPasswordClick = () => {
-	console.log('forgot password click!');
+const onForgotPasswordClick = (navigateToPasswordRecovery: NavigateFunction) => {
+	navigateToPasswordRecovery('/recovery');
 };
 
-const onLoginClick = () => {
-	console.log('login click!');
+const onLoginClick = (navigateToSchemas: NavigateFunction) => {
+	navigateToSchemas('/dashboard');
 };
 
-const onRegistrationClick = (navigate: NavigateFunction) => {
-	navigate('/registration');
+const onRegistrationClick = (navigateToRegistration: NavigateFunction) => {
+	navigateToRegistration('/registration');
 };
 
 const LoginBlock = () => {
@@ -26,12 +26,22 @@ const LoginBlock = () => {
 			<EmailInput className="login-frame__input login-frame__input_email" placeholder="Email" />
 			<PasswordInput className="login-frame__input login-frame__input_password" placeholder="Password" />
 			<div className="login-frame__forgot-password-box">
-				<SecondaryButton content="Forgot password ?" onClick={onForgotPasswordClick} />
+				<SecondaryButton
+					content="Forgot password ?"
+					onClick={() => onForgotPasswordClick(navigate)}
+				/>
 			</div>
-			<PrimaryButton className="login-frame__login-button" content="Login" onClick={onLoginClick} />
+			<PrimaryButton
+				className="login-frame__login-button"
+				content="Login"
+				onClick={() => onLoginClick(navigate)}
+			/>
 			<div className="login-frame__registration-box">
 				<p>Not registered yet?</p>
-				<SecondaryButton content="Registration" onClick={() => onRegistrationClick(navigate)} />
+				<SecondaryButton
+					content="Registration"
+					onClick={() => onRegistrationClick(navigate)}
+				/>
 			</div>
 		</ContentPrimaryFrame>
 	);

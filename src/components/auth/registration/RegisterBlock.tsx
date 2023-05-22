@@ -1,4 +1,5 @@
 import React, { FormEvent } from 'react';
+import { NavigateFunction, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import ContentPrimaryFrame from '../../ui/ContentPrimaryFrame';
 import EmailInput from '../../ui/inputs/EmailInput';
@@ -9,12 +10,12 @@ import SecondaryButton from '../../ui/SecondaryButton';
 import { RootState } from '../../../redux/store';
 import { updateRegistrationEmail } from '../../../redux/reducers/registrationValues';
 
-const onNextStepClick = () => {
-	console.log('NextStep click');
+const onNextStepClick = (onNextStepClick: NavigateFunction) => {
+	onNextStepClick('/account/confirm');
 };
 
-const onAuthenticationClick = () => {
-	console.log('Authentication click');
+const onAuthenticationClick = (onAuthenticationClick: NavigateFunction) => {
+	onAuthenticationClick('/login');
 };
 
 const onCheckBoxClick = () => {
@@ -22,6 +23,7 @@ const onCheckBoxClick = () => {
 };
 
 const RegisterBlock = () => {
+	const navigate = useNavigate();
 	const emailValue = useSelector((state: RootState) => state.registration.email);
 	const isEmailValid = useSelector((state: RootState) => state.registration.isEmailValid);
 	const dispatch = useDispatch();
@@ -29,7 +31,6 @@ const RegisterBlock = () => {
 	return (
 		<ContentPrimaryFrame className="register-page__register-block">
 			<h1>Registration</h1>
-
 			<input
 				style={{
 					borderColor: isEmailValid ? 'green' : 'red',
@@ -50,10 +51,17 @@ const RegisterBlock = () => {
 			<div className="register-frame__policy-of-personal-data-processing-box">
 				<CheckBox content="I agree with the policy of personal data processing" onChange={onCheckBoxClick} />
 			</div>
-			<PrimaryButton className="register-frame__register-button" content="Next step" onClick={onNextStepClick} />
+			<PrimaryButton
+				className="register-frame__register-button"
+				content="Next step"
+				onClick={() => onNextStepClick(navigate)}
+			/>
 			<div className="register-frame__authentication-box">
 				<p>Already registered?</p>
-				<SecondaryButton content="Authentication" onClick={onAuthenticationClick} />
+				<SecondaryButton
+					content="Authentication"
+					onClick={() => onAuthenticationClick(navigate)}
+				/>
 			</div>
 		</ContentPrimaryFrame>
 	);

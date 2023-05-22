@@ -13,11 +13,9 @@ import ChangePasswordPage from '../auth/change-password/ChangePasswordPage';
 const Router = () => (
 	<div className="router">
 		<Routes>
-			<Route element={<HomePage />}>
-				<Route path="/" element={<HomePage />} />
-			</Route>
+			<Route path="/home" element={<HomePage />} />
 			<Route path="/dashboard" element={<DashboardPage />} />
-			<Route path="/account/confirm/000000" element={<ConfirmationPage />} />
+			<Route path="/account/confirm" element={<ConfirmationPage />} />
 			<Route path="/login" element={<LoginPage />} />
 			<Route path="/change-password" element={<ChangePasswordPage />} />
 			<Route path="/recovery" element={<PasswordRecoveryPage />} />
